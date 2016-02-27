@@ -1,0 +1,62 @@
+body {
+  font-family: 'Open Sans';
+}
+
+.header {
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.info {
+  background: #EEF2F8;
+}
+
+.navtron {
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.navi, .navi a {
+  padding: 0;
+}
+
+.navi {
+  margin-right: 15px;
+}
+
+.fa {
+  margin-right: 4px;
+}
+
+
+.sidebar {
+  padding: 30px;
+  margin-left: -15px;
+}
+
+
+h4 {
+  color: #4A90E2;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+td + td {
+  padding-left: 15px;
+}
+
+.main-gallery {
+  margin-right: 15px;
+  height: 400px;
+}
+
+img { 
+max-width:100%;
+max-height:100%;
+}

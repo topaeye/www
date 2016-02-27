@@ -1,0 +1,24 @@
+{
+  "name": "topaeye",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:html": "jade src/pages -o dist -H",
+    "prebuild:css": "mkdir -p dist/assets/css",
+    "build:css": "postcss --use autoprefixer src/styles/main.css --dir dist/assets/css",
+    "build": "npm run build:css & npm run build:html",
+    "watch:html": "npm run build:html -- --watch",
+    "watch:css": "npm run build:css -- --watch",
+    "watch": "npm run watch:css & npm run watch:html",
+    "serve": "browser-sync start --server dist --files 'dist/assets/css/*.css,dist/*.html'",
+    "start": "npm run watch & npm run serve"
+  },
+  "author": "",
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "browser-sync": "^2.11.1",
+    "jade": "^1.11.0",
+    "postcss-cli": "^2.5.0"
+  }
+}

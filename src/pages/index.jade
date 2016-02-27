@@ -1,0 +1,69 @@
+extends ../templates/layout.jade
+
+block title
+  title Topa Topa Optometry
+
+block content
+  .container
+    .row.header
+      .col-lg-5
+        h1 Topa Topa Optometry, Inc.
+      .col-lg-7
+        ul.list-inline.navtron
+          li.navi: a.ha(href="#") Our doctors
+          li.navi: a.ha(href="#") Services
+          li.navi: a.ha(href="#") Frames
+          li.navi: a.ha(href="#") Contact
+          li.navi: a.ha(href="#") Request an appointment
+    .row
+      .col-sm-8
+        h2 foo
+      .col-sm-4.info.sidebar
+        h4 Location and hours
+        h5
+          i.fa.fa-map-marker
+          | Address
+        div Suite 101
+        div 1211 Maricopa Highway
+        div Ojain, CA 93023
+        h5 
+          i.fa.fa-clock-o
+          | Hours
+        table.hours
+          tr
+            td Monday
+            td 8:30 - 5:30
+          tr
+            td Tuesday
+            td 9:30 - 5:30
+          tr
+            td Wed - Fri
+            td 8:30 - 5:30
+          tr
+            td Saturday
+            td By appointment
+          tr
+            td Sunday
+            td Closed
+
+    .row
+      .col-sm-8 asdf
+      .col-sm-4.sidebar
+        h4 Get in touch
+        h5
+          i.fa.fa-phone
+          | Phone
+        span (805) 646-5109
+        h5
+          i.fa.fa-fax
+          | Fax
+        span (805) 646-3519
+        h5 
+          i.fa.fa-envelope
+          | Email
+        span hello@topaeye.com
+        h5
+          i.fa.fa-facebook-official
+          | Facebook
+        span facebook.com/topaeye
+    h1 My asdf
