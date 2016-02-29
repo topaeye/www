@@ -8,7 +8,7 @@
 
 .navi, .navi a {
   padding: 0;
-  color: #676767;
+  color: #676767 !important;
 }
 
 .navi {
