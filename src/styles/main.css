@@ -1,3 +1,6 @@
+@import "fonts.css";
+@import "header.css";
+
 body {
   font-family: 'Open Sans';
 }
@@ -7,31 +10,16 @@ body {
   margin-bottom: 16px;
 }
 
-h1 {
+h1, h1 a, h1 a:hover, h1 a:visited, h1 a:active {
   margin: 0;
+  color: #4A90E2;
+  font-family: 'museo_slab500';
+  text-decoration: none;
 }
 
 .info {
   background: #EEF2F8;
 }
-
-.navtron {
-  line-height: 48px;
-  text-transform: uppercase;
-}
-
-.navi, .navi a {
-  padding: 0;
-}
-
-.navi {
-  margin-right: 15px;
-}
-
-.fa {
-  margin-right: 4px;
-}
-
 
 .sidebar {
   padding: 30px;
@@ -41,10 +29,13 @@ h1 {
 
 h4 {
   color: #4A90E2;
+  font-family: 'museo_slab500';
 }
 
 h5 {
   font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 6px;
 }
 
 td + td {
@@ -56,7 +47,52 @@ td + td {
   height: 400px;
 }
 
+a, a:visited, a:active {
+  color: #4A90E2;
+}
+
+.yolo {
+  color: #9B9B9B;
+}
+
+.bam {
+  padding-top: 30px;
+}
+
+.boom {
+  font-size: 20px;
+  margin-right: 30px;
+  line-height: 38px;
+}
+
 img { 
-max-width:100%;
-max-height:100%;
+  max-width:100%;
+  max-height:100%;
+}
+
+
+.logo {
+  width: 210px;
+  padding: 12px;
+  display: inline;
+}
+
+
+#slider {
+  max-height: 460px;
+}
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
 }

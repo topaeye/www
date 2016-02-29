@@ -1,69 +1,36 @@
-extends ../templates/layout.jade
+extends ../templates/main.jade
 
 block title
   title Topa Topa Optometry
 
 block content
-  .container
-    .row.header
-      .col-lg-5
-        h1 Topa Topa Optometry, Inc.
-      .col-lg-7
-        ul.list-inline.navtron
-          li.navi: a.ha(href="#") Our doctors
-          li.navi: a.ha(href="#") Services
-          li.navi: a.ha(href="#") Frames
-          li.navi: a.ha(href="#") Contact
-          li.navi: a.ha(href="#") Request an appointment
-    .row
-      .col-sm-8
-        h2 foo
-      .col-sm-4.info.sidebar
+  .row
+    .col-sm-8
+      <div id="slider" class="swipe">
+      <div class="swipe-wrap">
+      <div><img src="assets/images/5.jpg"></div>
+      <div><img src="assets/images/1.jpg"></div>
+      <div><img src="assets/images/7.jpg"></div>
+      <div><img src="assets/images/12.jpg"></div>
+      <div><img src="assets/images/17.jpg"></div>
+      <div><img src="assets/images/19.jpg"></div>
+      </div>
+      </div>
+    .col-sm-4
+      .info.sidebar
         h4 Location and hours
-        h5
-          i.fa.fa-map-marker
-          | Address
-        div Suite 101
-        div 1211 Maricopa Highway
-        div Ojain, CA 93023
-        h5 
-          i.fa.fa-clock-o
-          | Hours
-        table.hours
-          tr
-            td Monday
-            td 8:30 - 5:30
-          tr
-            td Tuesday
-            td 9:30 - 5:30
-          tr
-            td Wed - Fri
-            td 8:30 - 5:30
-          tr
-            td Saturday
-            td By appointment
-          tr
-            td Sunday
-            td Closed
+        include ../includes/address
+        include ../includes/hours
 
-    .row
-      .col-sm-8 asdf
-      .col-sm-4.sidebar
-        h4 Get in touch
-        h5
-          i.fa.fa-phone
-          | Phone
-        span (805) 646-5109
-        h5
-          i.fa.fa-fax
-          | Fax
-        span (805) 646-3519
-        h5 
-          i.fa.fa-envelope
-          | Email
-        span hello@topaeye.com
-        h5
-          i.fa.fa-facebook-official
-          | Facebook
-        span facebook.com/topaeye
-    h1 My asdf
+  .row
+    .col-sm-8.bam
+      h4 Our mission
+      div.yolo.boom
+        | We enrich the lives of our patients by providing state of the art, professional eye healthcare and superior quality prescription eyewear in a personalized, friendly, caring atmosphere.
+      h5
+        a(href="https://www.demandforced3.com/b/etile_reviews_popup.jsp?d3cp_exid=topaeye&d3cp_source=My%20Website", target="_blank")
+          i.fa.fa-trophy
+          |  Read our reviews
+    .col-sm-4.sidebar
+      h4 Get in touch
+      include ../includes/contact

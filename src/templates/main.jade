@@ -1,0 +1,17 @@
+extends ../templates/layout.jade
+
+block main
+  .container
+    .row.header
+      .col-lg-12
+        h1: a(href="/") Topa Topa Optometry, Inc.
+    .row
+      .col-lg-12
+        ul.list-inline.navtron
+          li.navi: a.ha(href="our-doctors.html") Our doctors
+          li.navi: a.ha(href="services.html") Services
+          li.navi: a.ha(href="frames.html") Frames
+          li.navi: a.ha(href="contact.html") Contact
+          li.navi: a.ha(href="appointments.html") Request an appointment
+          li.navi: a.ha(href="https://secure.yourlens.com/?DID=25624", target="_blank") Order Lenses
+    block content

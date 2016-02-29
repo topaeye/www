@@ -6,19 +6,29 @@
   "scripts": {
     "build:html": "jade src/pages -o dist -H",
     "prebuild:css": "mkdir -p dist/assets/css",
-    "build:css": "postcss --use autoprefixer src/styles/main.css --dir dist/assets/css",
+    "build:css": "postcss --use autoprefixer --use postcss-import src/styles/main.css --dir dist/assets/css",
     "build": "npm run build:css & npm run build:html",
     "watch:html": "npm run build:html -- --watch",
     "watch:css": "npm run build:css -- --watch",
-    "watch": "npm run watch:css & npm run watch:html",
+    "build:js": "browserify src/scripts/main.js -o dist/assets/js/main.js",
+    "watch:js": "watchify src/scripts/main.js -o dist/assets/js/main.js",
+    "watch": "npm run watch:css & npm run watch:html & npm run watch:js",
     "serve": "browser-sync start --server dist --files 'dist/assets/css/*.css,dist/*.html'",
-    "start": "npm run watch & npm run serve"
+    "start": "npm run watch & npm run serve",
+    "copy-assets": "npm run copy-fonts && npm run copy-images && npm run copy-documents",
+    "copy-fonts": "cp -r src/fonts dist/assets/fonts",
+    "copy-images": "cp -r src/images dist/assets/images",
+    "copy-documents": "cp -r src/documents dist/assets/documents"
   },
   "author": "",
   "devDependencies": {
     "autoprefixer": "^6.3.1",
     "browser-sync": "^2.11.1",
+    "browserify": "^13.0.0",
     "jade": "^1.11.0",
-    "postcss-cli": "^2.5.0"
+    "postcss-cli": "^2.5.0",
+    "postcss-import": "^8.0.2",
+    "swipejs": "^2.0.8",
+    "watchify": "^3.7.0"
   }
 }
