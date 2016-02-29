@@ -15,10 +15,12 @@
     "watch": "npm run watch:css & npm run watch:html & npm run watch:js",
     "serve": "browser-sync start --server dist --files 'dist/assets/css/*.css,dist/*.html'",
     "start": "npm run watch & npm run serve",
+    "generate-cname": "echo topaeye.com > dist/CNAME",
     "copy-assets": "npm run copy-fonts && npm run copy-images && npm run copy-documents",
     "copy-fonts": "cp -r src/fonts dist/assets/fonts",
     "copy-images": "cp -r src/images dist/assets/images",
-    "copy-documents": "cp -r src/documents dist/assets/documents"
+    "copy-documents": "cp -r src/documents dist/assets/documents",
+    "deploy": "push-dir --dir dist --branch gh-pages --remote www"
   },
   "author": "",
   "devDependencies": {
@@ -28,6 +30,7 @@
     "jade": "^1.11.0",
     "postcss-cli": "^2.5.0",
     "postcss-import": "^8.0.2",
+    "push-dir": "^0.2.1",
     "swipejs": "^2.0.8",
     "watchify": "^3.7.0"
   }
