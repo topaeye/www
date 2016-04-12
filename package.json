@@ -12,7 +12,7 @@
     "watch:css": "npm run build:css -- --watch",
     "build:js": "browserify src/scripts/main.js -o dist/assets/js/main.js",
     "watch:js": "watchify src/scripts/main.js -o dist/assets/js/main.js",
-    "watch": "npm run watch:css & npm run watch:html & npm run watch:js",
+    "watch": "npm run watch:css & npm run watch:html & npm run watch:js & wait",
     "serve": "browser-sync start --server dist --files 'dist/assets/css/*.css,dist/*.html'",
     "start": "npm run watch & npm run serve",
     "generate-cname": "echo topaeye.com > dist/CNAME",
