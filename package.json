@@ -7,7 +7,7 @@
     "build:html": "jade src/pages -o dist -H",
     "prebuild:css": "mkdir -p dist/assets/css",
     "build:css": "postcss --use autoprefixer --use postcss-import src/styles/main.css --dir dist/assets/css",
-    "build": "npm run build:css & npm run build:html",
+    "build": "npm run build:css & npm run build:html & npm run build:js",
     "watch:html": "npm run build:html -- --watch",
     "watch:css": "npm run build:css -- --watch",
     "build:js": "browserify src/scripts/main.js -o dist/assets/js/main.js",
