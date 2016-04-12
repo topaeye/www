@@ -12,5 +12,6 @@ script:
 - git config credential.helper "env --username=GITHUB_TOKEN"
 - git config user.name "Travis CI"
 - npm run build
+- npm run generate-cname
 - npm run copy-assets
 - npm run deploy
