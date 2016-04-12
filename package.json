@@ -10,7 +10,7 @@
     "build": "npm run build:css & npm run build:html & npm run build:js",
     "watch:html": "npm run build:html -- --watch",
     "watch:css": "npm run build:css -- --watch",
-    "build:js": "browserify src/scripts/main.js -o dist/assets/js/main.js",
+    "build:js": "mkdir -p dist/assets/js && browserify src/scripts/main.js -o dist/assets/js/main.js",
     "watch:js": "watchify src/scripts/main.js -o dist/assets/js/main.js",
     "watch": "npm run watch:css & npm run watch:html & npm run watch:js & wait",
     "serve": "browser-sync start --server dist --files 'dist/assets/css/*.css,dist/*.html'",
