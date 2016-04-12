@@ -1,16 +1,16 @@
 language: node_js
 node_js:
-  - 5
+- 5
 branches:
-  only:
-    - master
+- only:
+  - master
 env:
-  global:
-    secure: CBCU2X4qkxl5cOE9YcdSTMPc+gZAXxZTYeZdSH+apNgqBpgXaxf/JwfrHVtPgFCqUVIiV/8deodAcvBqRVfk+ERW4QsaQkQ2T4P03+by+7J04vVorS7pEcU4wCUTmuFkfG64QNGi8w38ouLHEGCprM/JUXvFxioMJ0CTPd+DxXxRdwtQGBq5x7JJmA0c+7weiGwneQvlP8AlxOqnVevCwPxtt4bTOkdUTf3co2G5fRK7IZ2n6JZNHevbwzv8OLoi91dg9DLg5iTImG1xV4ZFN6eJrnB1PqySkw0pvsK5FN81dfu0REk6PEwNJaXnca+FaZl+0+1r1hqtuWqitJV8obU47SnYC6MPvtcwUxjYgLnhQSIj/iqOSLs/ec85UVa7HZrWxr8gsoCSvsymPzWBwqtuMB+VIKaXrGp9Ejaxljj03dMP9/e+ymuPrgo7Vce5q6zIDEWS5RzJmYPtZ4c6TqcXdnzvAYAlVVi+eOdu9mD6o6hs/ys3i6ubSQy9y6HXUlDA9YZFDQSOr1FhPDcyPecEBIAJEAGX+NQpAfQ+PSJKttx3Rpb9gY8kS7HvauklKkVnirmXna8IIfnKqQePkeOXSAlADCmxQcdIzWkxtrIr/yxHDp03Mt+wASHu7kjj3poCy5BPgflHCUYbx34VjNhk33K5r6MN4hrzM2p9JGo=
+- global:
+  - secure: Ynt0Oe5FAF2vZ2Jhiwx7DwUcN7c+bbZQrL9d14D6p62iE2F9xokLxbPMF80QtTj8e3Knyn2OV7i4gVzxrvoXnWkHyOO7gGZtT6PNsOgrzIjYm196o3+JqPDCJnZpQzhXHLavtArhMLDwHsvAE+4KlaU9JCGjKLZSiG9pWtYXtzXlmNhlwkVfRBL2ripNX8YdRbPbuqvkU/VOk+aE4ckT/GkkD8RDkVkZFNKtmkTnvDRJapwzSjF7FZ6HYtn5/NefG0SWV39Pgw5FzgVse4DIuB/M/XyXhURz6TqpJoZYn3M7MbZLYe8F7vazif1m9dmXddfy9fhk5soPBqHCRuaXzt0ZAkv9fnZNp05SUM0EmRlx7fQ3E+QSV8HwvF9SBe7rb+wEHNf1sIiPt9pzMEVm7mgO5opS1CTTMwsSG8RzS2Me+ynxWhY8dKkzSpAmrTSjp/clqYaJMTACa4U8mJmt2DpXxvGpB6gYmmOZsv7tXPEc+gyIu5j91JJASM1zKHSCR95H5DHFD5L49kxFG58UPm3Oqkaro8ls7He9FMTXZtE2psZBSQ4TwwWq98zXmueN4wWloQNsxE2yCYK8mn8pQn3z7rwjIKgzw7Jc6/Vg7tnobhZaMU1VovmrjBg+8eu2vmuP4+iNm1CMM/8W7JyJfbw+RhNKnNi9mP7FC4EWm4o=
 script:
-  - npm install -g git-credential-env
-  - git config credential.helper "env --username=GITHUB_TOKEN"
-  - git config user.name "Travis CI"
-  - npm run build
-  - npm run copy-assets
-  - npm run deploy
+- npm install -g git-credential-env
+- git config credential.helper "env --username=GITHUB_TOKEN"
+- git config user.name "Travis CI"
+- npm run build
+- npm run copy-assets
+- npm run deploy
