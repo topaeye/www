@@ -30,7 +30,7 @@
     "jade": "^1.11.0",
     "postcss-cli": "^2.5.0",
     "postcss-import": "^8.0.2",
-    "push-dir": "^0.2.1",
+    "push-dir": "0.2.1",
     "swipejs": "^2.0.8",
     "watchify": "^3.7.0"
   }
