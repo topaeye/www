@@ -20,7 +20,7 @@
     "copy-fonts": "cp -r src/fonts dist/assets/fonts",
     "copy-images": "cp -r src/images dist/assets/images",
     "copy-documents": "cp -r src/documents dist/assets/documents",
-    "deploy": "push-dir --dir dist --branch gh-pages --force"
+    "deploy": "push-dir --dir dist --branch gh-pages --verbose"
   },
   "author": "",
   "devDependencies": {
@@ -30,7 +30,7 @@
     "jade": "^1.11.0",
     "postcss-cli": "^2.5.0",
     "postcss-import": "^8.0.2",
-    "push-dir": "0.2.1",
+    "push-dir": "^0.4.0",
     "swipejs": "^2.0.8",
     "watchify": "^3.7.0"
   }
